@@ -1,0 +1,85 @@
+/* Market container setup */
+.market-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.user-info span {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Grid layout for market items */
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.market-item {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navbar customization using Bootstrap classes */
+.navbar-custom {
+    background-color: #f4f1ea; /* Light background color */
+    border-bottom: 2px solid #5a2d0c; /* Dark border color */
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: #5a2d0c; /* Dark text color */
+}
+
+
+/* Images in market items */
+.market-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Styling for the text under images */
+.market-item p {
+    font-size: 18px;
+    color: #333;
+}
+
+.market-item span {
+    font-size: 16px;
+    color: #999;
+}
+
+/* Add item button styling */
+.add-item button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-item button:hover {
+    background-color: #45a049;
+}

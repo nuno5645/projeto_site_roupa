@@ -1,0 +1,47 @@
+.hero-text h1 {
+    margin-bottom: 0.5rem;
+    color: #8a5a44; /* Vintage brown */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-text p {
+    color: #555;
+    font-style: italic;
+}
+
+.login-form {
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 350px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8a5a44; /* Vintage brown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login-button:hover {
+    background-color: #7a4a3b;
+}

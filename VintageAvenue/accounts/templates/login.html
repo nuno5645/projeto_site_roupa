@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div class="login-container">
+        <h1>Vintage Avenue</h1>
+        <!-- Formulário de login -->
+        <form method="post">
+            {% csrf_token %}
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <button type="submit">Login</button>
+        </form>
+        <!-- Botão para criar conta -->
+        <a href="{% url 'criar_conta' %}">Criar Conta</a>
+    </div>
+</body>
+</html>

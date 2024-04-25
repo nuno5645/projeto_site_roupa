@@ -1,0 +1,115 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f1ea;
+    flex-direction: column;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1, .hero-text p, .login-button, .navbar-custom .navbar-nav .nav-link {
+    color: #5a2d0c;
+}
+
+.login-button {
+    background-color: #5a2d0c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.navbar-custom {
+    background-color: #f4f1ea;
+    border-bottom: 2px solid #5a2d0c;
+}
+
+.hidden, #about-us {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible, #about-us.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.visible {
+    position: static;
+}
+
+#about-us {
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s;
+}
+
+.about-us-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.about-us-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-text, .about-us-image {
+    flex-basis: 50%;
+}
+
+.about-us-text {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.about-us-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-us-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slide-down-icon {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
